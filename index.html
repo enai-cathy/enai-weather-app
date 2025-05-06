@@ -4,106 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enai-Weather-App</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <section class="hero-section">
-      <header class="header">
-        <h1>SheCodes</h1>
-      </header>
-      <div class="form-container">
-        <form>
-          <input type="text" placeholder="Enter a city" />
-          <input type="button" value="Search" />
-        </form>
-      </div>
-      <div class="weather-info">
-        <div class="featuredCity">
-          <h2>San Francisco</h2>
-          <ul>
-            <li>"Sunday 07:34, broken clouds"</li>
-            <li>
-              " Humidity: "
-              <span class="climate air">90%</span>
-              ", Wind:"
-              <span class="climate air">3.6km/h</span>
-            </li>
-          </ul>
-        </div>
-        <div class="featuredWeather">
-          <img src="images/clear cloud.png" alt="clear clouds" />
-          " 10 "<unit>°C</unit>
-        </div>
-      </div>
-      <div class="WeatherForecast row">
-        <div class="forecastdays">
-          <div class="forecast-time">Mon</div>
-          <canvas width="38" height="38"></canvas>
-          <div class="forecast-temperature">
-            <span class="forecast-temperature-max">21°</span>
-            <span class="forecast-temperature-min">10°</span>
+      <div class="container">
+        <header class="header">
+          <div class="form-container">
+            <form>
+              <input
+                class="city"
+                type="text"
+                id="search-input"
+                placeholder="Enter a city"
+                required
+              />
+              <input class="button" type="submit" value="Search" />
+            </form>
+          </div>
+        </header>
+        <div class="weather-info">
+          <div class="featuredCity">
+            <h2 id="city">San Francisco</h2>
+            <ul>
+              <li>Sunday 07:34, broken clouds</li>
+              <li>
+                Humidity:
+                <span class="climate air">90%</span>
+                , Wind:
+                <span class="climate air">3.6km/h</span>
+              </li>
+            </ul>
+          </div>
+          <div class="featuredWeather">
+            <img src="images/clear cloud.png" />
+            <span>10</span> <unit>°C</unit>
           </div>
         </div>
-        <div class="forecastdays">
-          <div class="forecast-time">Tue</div>
-          <canvas width="38" height="38"></canvas>
-          <div class="forecast-temperature">
-            <span class="forecast-temperature-max">21°</span>
-            <span class="forecast-temperature-min">10°</span>
+        <div class="WeatherForecast-row">
+          <div class="forecastdays">
+            <div class="forecast-time">Mon</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">21°</span>
+              <span class="forecast-temperature-min">10°</span>
+            </div>
+          </div>
+
+          <div class="forecastdays">
+            <div class="forecast-time">Tue</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">21°</span>
+              <span class="forecast-temperature-min">10°</span>
+            </div>
+          </div>
+          <div class="forecastdays">
+            <div class="forecast-time">Wed</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">21°</span>
+              <span class="forecast-temperature-min">10°</span>
+            </div>
+          </div>
+          <div class="forecastdays">
+            <div class="forecast-time">Thur</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">21°</span>
+              <span class="forecast-temperature-min">10°</span>
+            </div>
+          </div>
+          <div class="forecastdays">
+            <div class="forecast-time">Fri</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">21°</span>
+              <span class="forecast-temperature-min">10°</span>
+            </div>
+          </div>
+          <div class="forecastdays">
+            <div class="forecast-time">Sat</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature">
+              <span class="forecast-temperature-max">21°</span>
+              <span class="forecast-temperature-min">10°</span>
+            </div>
           </div>
         </div>
-        <div class="forecastdays">
-          <div class="forecast-time">Wed</div>
-          <canvas width="38" height="38"></canvas>
-          <div class="forecast-temperature">
-            <span class="forecast-temperature-max">21°</span>
-            <span class="forecast-temperature-min">10°</span>
-          </div>
-        </div>
-        <div class="forecastdays">
-          <div class="forecast-time">Thur</div>
-          <canvas width="38" height="38"></canvas>
-          <div class="forecast-temperature">
-            <span class="forecast-temperature-max">21°</span>
-            <span class="forecast-temperature-min">10°</span>
-          </div>
-        </div>
-        <div class="forecastdays">
-          <div class="forecast-time">Fri</div>
-          <canvas width="38" height="38"></canvas>
-          <div class="forecast-temperature">
-            <span class="forecast-temperature-max">21°</span>
-            <span class="forecast-temperature-min">10°</span>
-          </div>
-        </div>
-        <div class="forecastdays">
-          <div class="forecast-time">Sat</div>
-          <canvas width="38" height="38"></canvas>
-          <div class="forecast-temperature">
-            <span class="forecast-temperature-max">21°</span>
-            <span class="forecast-temperature-min">10°</span>
-          </div>
-        </div>
+
+        <footer>
+          <p>
+            " This project was coded by "
+            <a href="https://github.com/enai-cathy" target="_blank"
+              >Ige-Edaba Enaikato</a
+            >
+            " and is "
+            <a
+              href="https://github.com/enai-cathy/enai-weather-app"
+              target="_blank"
+            >
+              on GitHub</a
+            >
+            " and "
+            <a href="https://enai-weather-app.netlify.app/" target="_blank"
+              >hosted on Netlify</a
+            >
+          </p>
+        </footer>
       </div>
     </section>
-
-    <footer>
-      <p>
-        " This project was coded by "
-        <a href="https://github.com/enai-cathy" target="_blank"
-          >Ige-Edaba Enaikato</a
-        >
-        " and is "
-        <a
-          href="https://github.com/enai-cathy/enai-weather-app"
-          target="_blank"
-        >
-          on GitHub</a
-        >
-        " and "
-        <a href="https://enai-weather-app.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
