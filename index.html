@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enai-Weather-App</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <section class="hero-section">
@@ -27,18 +28,21 @@
           <div class="featuredCity">
             <h2 id="city">San Francisco</h2>
             <ul>
-              <li>Sunday 07:34, broken clouds</li>
+              <li>
+                <span id="time">Sunday 07:34,</span>
+                <span id="mainCondition">broken clouds</span>
+              </li>
               <li>
                 Humidity:
-                <span class="climate air">90%</span>
+                <span id="humidity" class="climate">90%</span>
                 , Wind:
-                <span class="climate air">3.6km/h</span>
+                <span id="wind" class="climate air">3.6km/h</span>
               </li>
             </ul>
           </div>
           <div class="featuredWeather">
-            <img src="images/clear cloud.png" />
-            <span>10</span> <unit>°C</unit>
+            <img id="icon" src="images/clear cloud.png" />
+            <span id="mainTemperature">10</span> <unit>°C</unit>
           </div>
         </div>
         <div class="WeatherForecast-row">

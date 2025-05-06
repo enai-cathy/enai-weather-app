@@ -66,16 +66,21 @@ ul {
 ul li span {
   color: red;
 }
+#time {
+  color: rgba(0, 0, 0, 0.418);
+  font-size: 16px;
+  font-weight: 200px;
+}
 .featuredWeather {
   font-size: 80px;
   font-weight: 600;
   position: relative;
-  top: 40px;
+  top: 0px;
 }
 .featureWeather span {
   font-size: 35px;
   position: relative;
-  top: -10px;
+  top: -40px;
 }
 .featuredWeather unit {
   font-weight: 400;
