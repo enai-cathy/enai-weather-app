@@ -102,6 +102,12 @@ ul li span {
   padding: 0;
   text-align: center;
 }
+.forecastdays img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
 .forecast-temperature {
   color: red;
   font-size: 18px;
