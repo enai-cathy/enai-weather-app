@@ -4,7 +4,7 @@ body {
 section {
   margin: 30px auto;
   max-width: 700px;
-  height: 400px;
+  height: 500px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 50px 50px 0.8 rgba(65, 50, 100, 0.08);
@@ -90,11 +90,25 @@ ul li span {
 }
 .WeatherForecast-row {
   display: flex;
+  justify-content: space-evenly;
   padding: 25px 0;
 }
 .forecastdays {
-  display: flex;
-  justify-content: space-evenly;
+  display: block;
+  color: rgba(0, 0, 0, 0.418);
+  font-size: 16px;
+  font-weight: 200px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.forecast-temperature {
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+}
+.forecast-temperature-min {
+  color: rgba(255, 0, 0, 0.459);
 }
 footer p {
   font-family: "Roboto", sans-serif;
